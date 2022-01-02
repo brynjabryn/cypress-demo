@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import FancyModal from './components/FancyModal/FancyModal';
 
 function App() {
   return (
@@ -18,6 +19,13 @@ function App() {
         >
           Learn React
         </a>
+        <button 
+        	id="btn-open-modal"
+        	aria-controls="fancy-modal"
+        >
+        	Show Fancy Modal!
+        </button>
+        <FancyModal></FancyModal>
       </header>
     </div>
   );
